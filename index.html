@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <style>
+        #map {
+            height: 350px;
+            width: 50%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="bg-cover h-screen bg-gray-700 bg-blend-multiply" style="background-image: url('./image/2.jpg');">
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+                Tempat Olahraga Sekitar UNNES</h1>
+            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Temukan tempat olahraga
+                terbaik di sekitar UNNES dengan mudah dan cepat! <br>
+
+                Pilih dari berbagai fasilitas: <strong> FUTSAL, BULUTANGKIS, TENIS MEJA, dan BASKET. </strong> <br> Dilengkapi
+                dengan peta
+                lokasi untuk memudahkan Anda menemukan lokasi.
+            </p>
+        </div>
+    </section>
+
+    <div class="mt-5 ">
+        <h1 class="my-3 mx-10 text-2xl">Peta Lokasi Tempat Olahraga</h1>
+        <div class="flex items-center justify-center">
+            <div class="" id="map"></div>
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-8">
+        <div
+            class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+            <ul class="flex items-center justify-center -mb-px">
+                <li class="me-2">
+                    <a href="#futsal"
+                        class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-blue-600 hover:border-blue-300 dark:hover:text-blue-300"
+                        aria-current="page">FUTSAL</a>
+                </li>
+                <li class="me-2">
+                    <a href="#bulutangkis"
+                        class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-blue-600 hover:border-blue-300 dark:hover:text-blue-300">BULUTANGKIS</a>
+                </li>
+                <li class="me-2">
+                    <a href="#tenisMeja"
+                        class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-blue-600 hover:border-blue-300 dark:hover:text-blue-300">TENIS
+                        MEJA</a>
+                </li>
+                <li class="me-2">
+                    <a href="#basket"
+                        class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-blue-600 hover:border-blue-300 dark:hover:text-blue-300">
+                        BASKET</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container ml-10 mt-10">
+        <h1 class="text-2xl" id="futsal"># Futsal</h1>
+    </div>
+    <div class=" my-3 mx-10  grid grid-cols-3 gap-4">
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <iframe class="container h-72"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15838.407960011378!2d110.3841589024193!3d-7.055964716485158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bdef1711de9%3A0x7de3711b1d0785ee!2sSan%20Bao%20Lung%20Futsal!5e0!3m2!1sid!2sid!4v1734188271553!5m2!1sid!2sid"
+                    style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        San Bao Lung
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    San Bao Lung Futsal, Jl. Cemp. Sari III No.4, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah
+                    50229
+                </p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <b>Jenis Olahraga: Futsal & Tenis Meja</b>
+                </p>
+                </a>
+            </div>
+        </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <iframe class="container h-72"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15838.407960011378!2d110.37971961045427!3d-7.055964716485158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bd8c33fc8ed%3A0x956ed5e82d0fe0b4!2sZona6%20Futsal!5e0!3m2!1sid!2sid!4v1734276526322!5m2!1sid!2sid"
+                    style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        Zona 6
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Jalan Taman Siswa, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50229
+                </p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <b>Jenis Olahraga: Futsal</b>
+                </p>
+                </a>
+            </div>
+        </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <iframe class="container h-72"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15838.755715903611!2d110.37580615541992!3d-7.045793799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bdc1ceda681%3A0xe861345cd6d505f5!2sMerdeka%20Futsal!5e0!3m2!1sid!2sid!4v1734188396522!5m2!1sid!2sid"
+                    style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        Merdeka Futsal
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Merdeka Futsal, Gg. Nangka No.002, RT./RW:003/RW.03/02, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa
+                    Tengah 50229
+                </p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <b>Jenis Olahraga: Futsal</b>
+                </p>
+                </a>
+            </div>
+        </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <iframe class="container h-72"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7474.872940870479!2d110.3927124562119!3d-7.047312727918857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bdd03a5d405%3A0xb3b869e4d5fb7fa3!2sLapangan%20Futsal%20dan%20Basket%20Prof.%20Kamiso%20UNNES!5e0!3m2!1sid!2sid!4v1734274022321!5m2!1sid!2sid"
+                    style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        Lapangan Futsal dan Basket Prof. Kamiso UNNES
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Univ. Negeri Semarang, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50229
+                </p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <b>Jenis Olahraga: Futsal & Basket</b>
+                </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <iframe class="container h-72"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15838.755715903553!2d110.37580615541992!3d-7.045793799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bc4fba424e1%3A0xdc876b2c3a101472!2sBuana%20Futsal%20dan%20Ping%20Pong!5e0!3m2!1sid!2sid!4v1734356387593!5m2!1sid!2sid"
+                    style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        Buana Futsal
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50229
+                </p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <b>Jenis Olahraga: Futsal</b>
+                </p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container ml-10 mt-10">
+        <h1 class="text-2xl" id="bulutangkis"># Bulutangkis</h1>
+    </div>
+
+    <div class=" my-3 mx-10  grid grid-cols-3 gap-4">
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <iframe class="container h-72"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7919.223036756647!2d110.38813054561615!3d-7.054850711802449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bdeda72b5e1%3A0x144deb3fb2c3da59!2sLapangan%20Bulutangkis%20Ena!5e0!3m2!1sid!2sid!4v1734275829997!5m2!1sid!2sid"
+                    style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        Lapangan Bulutangkis Ena
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Gg. Jeruk, RT.01/RW.01, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50229
+                </p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <b>Jenis Olahraga: Bulutangkis</b>
+                </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <iframe class="container h-72"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7919.362900850067!2d110.38881316781045!3d-7.046669283480273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b004a237b8b%3A0x2ac8398367dc12dd!2sGor%20Badminton%20Maulana%20Gunung%20Pati!5e0!3m2!1sid!2sid!4v1734276193986!5m2!1sid!2sid"
+                    style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        Gor Badminton Maulana Gunung Pati
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Gg. Kalimasada 2A, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50229
+                </p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <b>Jenis Olahraga: Bulutangkis</b>
+                </p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container ml-10 mt-10">
+        <h1 class="text-2xl" id="tenisMeja"># Tenis Meja</h1>
+    </div>
+
+    <div class=" my-3 mx-10  grid grid-cols-3 gap-4">
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <iframe class="container h-72"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15838.407960011378!2d110.3841589024193!3d-7.055964716485158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bdef1711de9%3A0x7de3711b1d0785ee!2sSan%20Bao%20Lung%20Futsal!5e0!3m2!1sid!2sid!4v1734188271553!5m2!1sid!2sid"
+                    style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        San Bao Lung
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    San Bao Lung Futsal, Jl. Cemp. Sari III No.4, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah
+                    50229
+                </p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <b>Jenis Olahraga: Futsal & Tenis Meja</b>
+                </p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container ml-10 mt-10">
+        <h1 class="text-2xl" id="basket"># BASKET</h1>
+    </div>
+
+    <div class=" my-3 mx-10  grid grid-cols-3 gap-4">
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <iframe class="container h-72"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7474.872940870479!2d110.3927124562119!3d-7.047312727918857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bdd03a5d405%3A0xb3b869e4d5fb7fa3!2sLapangan%20Futsal%20dan%20Basket%20Prof.%20Kamiso%20UNNES!5e0!3m2!1sid!2sid!4v1734274022321!5m2!1sid!2sid"
+                    style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        Lapangan Futsal dan Basket Prof. Kamiso UNNES
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Univ. Negeri Semarang, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50229
+                </p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <b>Jenis Olahraga: Futsal & Basket</b>
+                </p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <script src="./node_modules/flowbite/dist/flowbite.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <!-- <script src="./js/css.js"></script> -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="./js/map.js"></script>
+</body>
+
+</html>
